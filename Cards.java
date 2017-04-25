@@ -58,7 +58,11 @@ import java.awt.*;
 		}
 		
 	    	// draw the card
-	    	public void draw ( Graphics g, int x, int y)
+	static class draw extends JPanel{
+		public draw(){
+		}
+		@Override
+	    	public void drawFunct ( Graphics g, int x, int y)
 	    	{
 		    // draw border
 		    g.clearRect( x, y, width, height );

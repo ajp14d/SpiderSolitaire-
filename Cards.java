@@ -57,6 +57,40 @@ import java.awt.*;
 				return black; 
 		}
 		
+	    	// draw the card
+	    	public void draw ( Graphics g, int x, int y)
+	    	{
+		    // draw border
+		    g.clearRect( x, y, width, height );
+		    g.setColor(Color.BLACK);
+		    g.drawRect(x, y, width, height);
+
+		    // draw body of card
+		    if ( faceUp() )
+		    {
+			g.drawString(names[rank()], x+3, y+15);
+			//draw lines of Spade card
+		    	g.drawLine(x+25, y+20, x+40, y+50);
+	    		g.drawLine(x+40, y+50, x+10, y+50);
+	    		g.drawLine(x+10, y+50, x+25, y+20);
+	    		g.drawLine(x+23, y+45, x+20, y+60);
+	    		g.drawLine(x+20, y+60, x+30, y+60);
+	    		g.drawLine(x+30, y+60, x+27, y+45);
+			
+		    }
+			else // face down
+			{
+				g.setColor(Color.yellow);
+				g.drawLine(x+15, y+5, x+15, y+65);
+				g.drawLine(x+35, y+5, x+35, y+65);
+				g.drawLine(x+5, y+20, x+45, y+20);
+				g.drawLine(x+5, y+35, x+45, y+35);
+				g.drawLine(x+5, y+50, x+45, y+50);		
+			}
+	    	}
+		
+		
+		
 		
 		
 		

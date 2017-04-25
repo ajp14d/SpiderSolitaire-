@@ -6,6 +6,9 @@ import java.awt.*;
 
 
 	public class Cards{
+		// dimensions of cards
+		final static int width = 50;
+    		final static int height = 70;
 		
 		final static int ace = 0; 
 		final static int king = 12; 
@@ -54,7 +57,6 @@ import java.awt.*;
 				return black; 
 		}
 		
-		System.print
 		
 		
 		

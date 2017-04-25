@@ -54,6 +54,8 @@ import java.awt.*;
 				return black; 
 		}
 		
+		System.print
+		
 		
 		
 		

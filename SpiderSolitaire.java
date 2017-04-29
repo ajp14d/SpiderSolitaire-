@@ -41,7 +41,7 @@ public class SpiderSolitaire extends Application  {
         
 //<<<<<<< patch-8
         ImageView image = new ImageView(new Image(getClass()
-            .getResourceAsStream("/res/2c.gif")));
+            .getResourceAsStream("/resources/2c.gif")));
         root.getChildren().add(image);
         
         
